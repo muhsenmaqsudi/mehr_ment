@@ -1,5 +1,5 @@
 import { Router, Request, Response } from "express";
-import { server as app } from "./config";
+import { server as app, PORT } from "./config";
 
 const router = Router();
 
@@ -9,6 +9,6 @@ router.get("/", (req: Request, res: Response) => {
 
 app.use(router);
 
-app.listen(3000, () => {
-  console.log("App is listening on port 3000");
+app.listen(PORT, () => {
+  console.log(`App is listening on port ${PORT} `);
 });

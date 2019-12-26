@@ -1,7 +1,6 @@
-import express, { Router, Request, Response } from "express";
-import bodyParser from "body-parser";
+import { Router, Request, Response } from "express";
+import { server as app } from "./config";
 
-const app = express();
 const router = Router();
 
 router.get("/", (req: Request, res: Response) => {

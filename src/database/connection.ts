@@ -10,7 +10,8 @@ class Connection {
     // mongoose.Promise = global.Promise;
     this.connect(this.url, {
       useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
+      useFindAndModify: false
     }).then(res => {
       console.log("Established new connection with url", this.url);
     });

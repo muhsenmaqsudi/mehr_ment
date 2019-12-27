@@ -6,9 +6,9 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "start": "node -r dotenv/config dist/index.js",
-    "dev:build": "tsc -w",
-    "dev:run": "nodemon -r dotenv/config dist/index.js",
-    "dev": "concurrently yarn:dev:*"
+    "watch:ts": "tsc -w",
+    "watch:node": "nodemon -r dotenv/config dist/index.js",
+    "dev": "concurrently -kill-others --names \"TypeScript,Node\" -c \"bgBlue.bold,bgMagenta.bold\" \"yarn:watch:ts\" \"yarn:watch:node\""
   },
   "keywords": [],
   "author": "",

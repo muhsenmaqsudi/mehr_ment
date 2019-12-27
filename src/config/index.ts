@@ -1,2 +1,2 @@
-export { default as server } from "./server";
+// export { default as alias } from "path";
 export * from "./app";

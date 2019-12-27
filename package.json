@@ -2,12 +2,12 @@
   "name": "mehr_ment",
   "version": "1.0.0",
   "description": "Sandogh Mehr Backend Using MongoDB, Expressjs, Nodejs, Typescript & Jest test driven",
-  "main": "index.js",
+  "main": "server.ts",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "start": "node -r dotenv/config dist/index.js",
+    "start": "node -r dotenv/config dist/server.js",
     "watch:ts": "tsc -w",
-    "watch:node": "nodemon -r dotenv/config dist/index.js",
+    "watch:node": "nodemon -r dotenv/config dist/server.js",
     "dev": "concurrently -kill-others --names \"TypeScript,Node\" -c \"bgBlue.bold,bgMagenta.bold\" \"yarn:watch:ts\" \"yarn:watch:node\""
   },
   "keywords": [],

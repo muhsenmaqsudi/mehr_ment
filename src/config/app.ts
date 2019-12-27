@@ -11,6 +11,4 @@ const databaseConfig: DatabaseConfig = config.get(ConfigKeys.DATABASE);
 const PORT = serverConfig.port || process.env["PORT"];
 const DB_URL = databaseConfig?.URI || process.env["MONGODB_URI"];
 
-console.log(DB_URL);
-
 export { PORT, DB_URL };

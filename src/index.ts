@@ -1,5 +1,6 @@
 import { Router, Request, Response } from "express";
 import { server as app, PORT } from "./config";
+import "./database/connection";
 
 const router = Router();
 
